@@ -51,6 +51,8 @@ pl:
               taken: status już istnieje
         user:
           attributes:
+            date_of_birth:
+              below_limit: jest poniżej granicy wiekowej
             email:
               blocked: używa niedozwolonego dostawcy poczty elektronicznej
               unreachable: wydaje się nie istnieć

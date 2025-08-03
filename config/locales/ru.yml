@@ -1682,37 +1682,37 @@ ru:
   notification_mailer:
     admin:
       report:
-        subject: "%{name} отправил жалобу"
+        subject: Поступила жалоба от %{name}
       sign_up:
-        subject: "%{name} зарегистрирован"
+        subject: "%{name} зарегистрировался (-лась) на сервере"
     favourite:
       body: "%{name} добавил(а) ваш пост в избранное:"
       subject: "%{name} добавил(а) ваш пост в избранное"
-      title: Понравившийся статус
+      title: Ваш пост добавили в избранное
     follow:
       body: "%{name} теперь подписан(а) на вас!"
       subject: "%{name} теперь подписан(а) на вас"
       title: Новый подписчик
     follow_request:
-      action: Управление запросами на подписку
+      action: Перейти к запросам на подписку
       body: "%{name} отправил(а) вам запрос на подписку"
       subject: "%{name} хочет подписаться на вас"
       title: Новый запрос на подписку
     mention:
       action: Ответить
-      body: 'Вас упомянул(а) %{name} в:'
+      body: "%{name} упомянул(а) вас:"
       subject: "%{name} упомянул(а) вас"
       title: Новое упоминание
     poll:
       subject: Опрос %{name} завершился
     reblog:
-      body: 'Ваш пост был продвинут %{name}:'
+      body: "%{name} продвинул(а) ваш пост:"
       subject: "%{name} продвинул(а) ваш пост"
-      title: Новое продвижение
+      title: Ваш пост продвинули
     status:
-      subject: "%{name} только что запостил(а)"
+      subject: "%{name} опубликовал(а) новый пост"
     update:
-      subject: "%{name} изменил(а) пост"
+      subject: "%{name} отредактировал(а) пост"
   notifications:
     email_events: События для уведомлений по электронной почте
     email_events_hint: 'Выберите события, для которых вы хотели бы получать уведомления:'
