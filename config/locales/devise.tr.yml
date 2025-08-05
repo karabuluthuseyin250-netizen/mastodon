@@ -1,121 +1,121 @@
 ---
-tr:
+en:
   devise:
     confirmations:
-      confirmed: E-posta adresiniz başarıyla onaylandı.
-      send_instructions: Birkaç dakika içinde e-posta adresinizi nasıl onaylayacağınıza ilişkin talimatları içeren bir e-posta alacaksınız. Bu e-postayı almadıysanız, lütfen spam klasörünüzü kontrol edin.
-      send_paranoid_instructions: E-posta adresiniz veritabanımızda varsa, e-posta adresinizi birkaç dakika içinde nasıl doğrulayacağınıza ilişkin talimatları içeren bir e-posta alacaksınız. Bu e-postayı almadıysanız, lütfen spam klasörünüzü kontrol edin.
+      confirmed: Your email address has been successfully confirmed.
+      send_instructions: You will receive an email with instructions for how to confirm your email address in a few minutes. Please check your spam folder if you didn't receive this email.
+      send_paranoid_instructions: If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes. Please check your spam folder if you didn't receive this email.
     failure:
-      already_authenticated: Zaten oturum açtınız.
-      inactive: Hesabınız henüz etkinleştirilmedi.
-      invalid: Geçersiz %{authentication_keys} ya da parola.
-      last_attempt: Hesabınız kilitlenmeden önce bir kez daha denemeniz gerekir.
-      locked: Hesabınız kilitlendi.
-      not_found_in_database: Geçersiz %{authentication_keys} ya da parola.
-      omniauth_user_creation_failure: Bu kimlik için hesap oluşturmada hata.
-      pending: Hesabınız hala inceleniyor.
-      timeout: Oturum süreniz sona erdi. Lütfen devam etmek için tekrar giriş yapınız.
-      unauthenticated: Devam etmeden önce oturum açmanız veya kayıt olmanız gerek.
-      unconfirmed: Devam etmeden önce e-posta adresini onaylamanız gerekli.
+      already_authenticated: You are already signed in.
+      inactive: Your account is not activated yet.
+      invalid: Invalid %{authentication_keys} or password.
+      last_attempt: You have one more attempt before your account is locked.
+      locked: Your account is locked.
+      not_found_in_database: Invalid %{authentication_keys} or password.
+      omniauth_user_creation_failure: Error creating an account for this identity.
+      pending: Your account is still under review.
+      timeout: Your session expired. Please login again to continue.
+      unauthenticated: You need to login or sign up before continuing.
+      unconfirmed: You have to confirm your email address before continuing.
     mailer:
       confirmation_instructions:
-        action: E-posta adresinizi doğrulayın
-        action_with_app: Onayla ve %{app} uygulamasına geri dön
-        explanation: Bu e-posta adresiyle %{host} bir hesap oluşturdunuz. Etkinleştirmekten bir tık uzaktasınız. Bu siz değilseniz, lütfen bu e-postayı dikkate almayın.
-        explanation_when_pending: Bu e-posta adresiyle %{host} adresine bir davetiye için başvuru yaptınız. E-posta adresinizi onayladıktan sonra başvurunuzu inceleyeceğiz. O zamana kadar giriş yapamazsınız. Başvurunuz reddedilirse, verileriniz silinecek, başka bir işlem yapmanız gerekmeyecek. Bu siz değilseniz, lütfen bu e-postayı dikkate almayın.
-        extra_html: Lütfen ayrıca <a href="%{terms_path}">sunucu kurallarını</a> ve <a href="%{policy_path}">hizmet şartlarımızı</a> inceleyin.
-        subject: 'Mastodon: %{instance} için onay talimatları'
-        title: E-posta adresini doğrulayın
+        action: Verify email address
+        action_with_app: Confirm and return to %{app}
+        explanation: You have created an account on %{host} with this email address. You are one click away from activating it. If this wasn't you, please ignore this email.
+        explanation_when_pending: You applied for an invite to %{host} with this email address. Once you confirm your e-mail address, we will review your application. You can login to change your details or delete your account, but you cannot access most of the functions until your account is approved. If your application is rejected, your data will be removed, so no further action will be required from you. If this wasn't you, please ignore this email.
+        extra_html: Please also check out <a href="%{terms_path}">the rules of the server</a> and <a href="%{policy_path}">our terms of service</a>.
+        subject: 'Mastodon: Confirmation instructions for %{instance}'
+        title: Verify email address
       email_changed:
-        explanation: 'Hesabınızın e-posta adresi şu şekilde değiştirildi:'
-        extra: E-posta adresinizi değiştirmediyseniz, büyük olasılıkla birileri hesabınıza erişti. Lütfen derhal parolanızı değiştirin veya hesabınız kilitlendiyse sunucu yöneticisine başvurun.
-        subject: 'Mastodon: E-posta adresi değişti'
-        title: Yeni e-posta adresi
+        explanation: 'The email address for your account is being changed to:'
+        extra: If you did not change your email, it is likely that someone has gained access to your account. Please change your password immediately or contact the server admin if you're locked out of your account.
+        subject: 'Mastodon: Email changed'
+        title: New email address
       password_change:
-        explanation: Hesabınızın parolası değiştirildi.
-        extra: Parolanızı değiştirmediyseniz, büyük olasılıkla birileri hesabınıza erişmiş olabilir. Lütfen derhal parolanızı değiştirin veya hesabınız kilitlendiyse sunucu yöneticisine başvurun.
-        subject: 'Mastodon: Parola değiştirildi'
-        title: Parola değiştirildi
+        explanation: The password for your account has been changed.
+        extra: If you did not change your password, it is likely that someone has gained access to your account. Please change your password immediately or contact the server admin if you're locked out of your account.
+        subject: 'Mastodon: Password changed'
+        title: Password changed
       reconfirmation_instructions:
-        explanation: E-postanızı değiştirmek için yeni adresi onaylayın.
-        extra: Bu değişiklik sizin tarafınızdan başlatılmadıysa, lütfen bu e-postayı dikkate almayın. Mastodon hesabının e-posta adresi, yukarıdaki bağlantıya erişene kadar değişmez.
-        subject: 'Mastodon: %{instance} için e-postayı onayla'
-        title: E-posta adresinizi doğrulayın
+        explanation: Confirm the new address to change your email.
+        extra: If this change wasn't initiated by you, please ignore this email. The email address for the Mastodon account won't change until you access the link above.
+        subject: 'Mastodon: Confirm email for %{instance}'
+        title: Verify email address
       reset_password_instructions:
-        action: Parolayı değiştir
-        explanation: Hesabınız için yeni bir parola istediniz.
-        extra: Bunu siz yapmadıysanız, lütfen bu e-postayı dikkate almayın. Parolanız yukarıdaki bağlantıya erişene ve yeni bir tane oluşturuncaya kadar değişmez.
-        subject: 'Mastodon: Parola sıfırlama talimatları'
-        title: Parola sıfırlama
+        action: Change password
+        explanation: You requested a new password for your account.
+        extra: If you didn't request this, please ignore this email. Your password won't change until you access the link above and create a new one.
+        subject: 'Mastodon: Reset password instructions'
+        title: Password reset
       two_factor_disabled:
-        explanation: Oturum açma şimdi sadece e-posta adresi ve parola ile mümkün.
-        subject: 'Mastodon: İki-adımlı kimlik doğrulama devre dışı bırakıldı'
-        subtitle: Hesabınız için iki aşamalı kimlik doğrulama devre dışı bırakılmıştır.
-        title: 2FA devre dışı bırakıldı
+        explanation: Login is now possible using only e-mail address and password.
+        subject: 'Mastodon: Two-factor authentication disabled'
+        subtitle: Two-factor authentication for your account has been disabled.
+        title: 2FA disabled
       two_factor_enabled:
-        explanation: Oturum açmanız için eşlenmiş TOTP uygulaması tarafından oluşturulmuş bir tokene ihtiyaç var.
-        subject: 'Mastodon: İki adımlı kimlik doğrulama etkinleştirildi'
-        subtitle: Hesabınız için iki aşamalı kimlik doğrulama etkinleştirilmiştir.
-        title: 2FA etkinleştirildi
+        explanation: A token generated by the paired TOTP app will be required for login.
+        subject: 'Mastodon: Two-factor authentication enabled'
+        subtitle: Two-factor authentication has been enabled for your account.
+        title: 2FA enabled
       two_factor_recovery_codes_changed:
-        explanation: Önceki kurtarma kodları geçersiz kılındı ve yenileri oluşturuldu.
-        subject: 'Mastodon: İki adımlı kurtarma kodları yeniden oluşturuldu'
-        subtitle: Önceki kurtarma kodları geçersiz kılındı ve yenileri oluşturuldu.
-        title: 2FA kurtarma kodları değiştirildi
+        explanation: The previous recovery codes have been invalidated and new ones generated.
+        subject: 'Mastodon: Two-factor recovery codes re-generated'
+        subtitle: The previous recovery codes have been invalidated and new ones generated.
+        title: 2FA recovery codes changed
       unlock_instructions:
-        subject: 'Mastodon: Kilit açma talimatları'
+        subject: 'Mastodon: Unlock instructions'
       webauthn_credential:
         added:
-          explanation: Aşağıdaki güvenlik anahtarı hesabınıza eklendi
-          subject: 'Mastodon: Yeni güvenlik anahtarı'
-          title: Yeni bir güvenlik anahtarı eklendi
+          explanation: The following security key has been added to your account
+          subject: 'Mastodon: New security key'
+          title: A new security key has been added
         deleted:
-          explanation: Aşağıdaki güvenlik anahtarı hesabınızdan silindi
-          subject: 'Mastodon: Güvenlik anahtarı silindi'
-          title: Güvenlik anahtarlarınızdan biri silindi
+          explanation: The following security key has been deleted from your account
+          subject: 'Mastodon: Security key deleted'
+          title: One of your security keys has been deleted
       webauthn_disabled:
-        explanation: Hesabınız için güvenlik anahtarıyla kimlik doğrulama devre dışı bırakılmıştır.
-        extra: Oturum açma şimdi sadece eşlenmiş TOTP uygulaması tarafından oluşturulmuş token ile mümkündür.
-        subject: 'Mastodon: Güvenlik anahtarlarıyla kimlik doğrulama devre dışı'
-        title: Güvenlik anahtarları devre dışı
+        explanation: Authentication with security keys has been disabled for your account.
+        extra: Login is now possible using only the token generated by the paired TOTP app.
+        subject: 'Mastodon: Authentication with security keys disabled'
+        title: Security keys disabled
       webauthn_enabled:
-        explanation: Hesabınız için güvenlik anahtarıyla kimlik doğrulama etkinleştirilmiştir.
-        extra: Güvenlik anahtarınız şimdi oturum açma için kullanılabilir.
-        subject: 'Mastodon: Güvenlik anahtarı doğrulaması etkinleştirildi'
-        title: Güvenlik anahtarları etkin
+        explanation: Security key authentication has been enabled for your account.
+        extra: Your security key can now be used for login.
+        subject: 'Mastodon: Security key authentication enabled'
+        title: Security keys enabled
     omniauth_callbacks:
-      failure: '%{kind}''den kimliğiniz doğrulanamadı çünkü "%{reason}".'
-      success: "%{kind} hesabından başarıyla kimlik doğrulaması yapıldı."
+      failure: Could not authenticate you from %{kind} because “%{reason}”.
+      success: Successfully authenticated from %{kind} account.
     passwords:
-      no_token: Bu sayfaya parola sıfırlama e-postasından gelmeden erişemezsiniz. Parola sıfırlama e-postasından geliyorsanız lütfen sağlanan tam URL'yi kullandığınızdan emin olun.
-      send_instructions: E-posta adresiniz veritabanımızda varsa, e-posta adresinize birkaç dakika içinde bir parola kurtarma bağlantısı gönderilir. Bu e-postayı almadıysanız, lütfen spam klasörünüzü kontrol edin.
-      send_paranoid_instructions: E-posta adresiniz veritabanımızda varsa, e-posta adresinize birkaç dakika içinde bir parola kurtarma bağlantısı gönderilir. Bu e-postayı almadıysanız, lütfen spam klasörünüzü kontrol edin.
-      updated: Parolanız başarılı bir şekilde değiştirildi. Şu an oturum açtınız.
-      updated_not_active: Parolanız başarıyla değiştirildi.
+      no_token: You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided.
+      send_instructions: If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes. Please check your spam folder if you didn't receive this email.
+      send_paranoid_instructions: If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes. Please check your spam folder if you didn't receive this email.
+      updated: Your password has been changed successfully. You are now signed in.
+      updated_not_active: Your password has been changed successfully.
     registrations:
-      destroyed: Görüşürüz! hesabın başarıyla iptal edildi. Umarız seni sonra tekrar görürüz.
-      signed_up: Hoş geldiniz! Başarılı bir şekilde oturum açtınız.
-      signed_up_but_inactive: Başarıyla kaydoldun. Ancak, seni içeri alamıyoruz çünkü hesabın henüz aktif değil.
-      signed_up_but_locked: Başarıyla kaydoldun. Ancak, seni içeri alamıyoruz çünkü hesabın kilitli.
-      signed_up_but_pending: Onay bağlantısına sahip bir mesaj e-posta adresinize gönderildi. Bağlantıyı tıkladıktan sonra başvurunuzu inceleyeceğiz. Onaylanması durumunda size bilgi verilecektir.
-      signed_up_but_unconfirmed: Onay bağlantısına sahip bir mesaj e-posta adresinize gönderildi. Lütfen hesabınızı etkinleştirmek için bağlantıyı takip edin. Bu e-postayı almadıysanız, lütfen spam klasörünüzü kontrol edin.
-      update_needs_confirmation: Hesabınızı başarıyla güncellediniz, ancak yeni e-posta adresinizi doğrulamamız gerekiyor. Lütfen e-postanızı kontrol edin ve yeni e-posta adresinizi onaylamak için onay bağlantısını izleyin. Bu e-postayı almadıysanız, lütfen spam klasörünüzü kontrol edin.
-      updated: Hesabınız başarıyla güncellendi.
+      destroyed: Bye! Your account has been successfully cancelled. We hope to see you again soon.
+      signed_up: Welcome! You have signed up successfully.
+      signed_up_but_inactive: You have signed up successfully. However, we could not sign you in because your account is not yet activated.
+      signed_up_but_locked: You have signed up successfully. However, we could not sign you in because your account is locked.
+      signed_up_but_pending: A message with a confirmation link has been sent to your email address. After you click the link, we will review your application. You will be notified if it is approved.
+      signed_up_but_unconfirmed: A message with a confirmation link has been sent to your email address. Please follow the link to activate your account. Please check your spam folder if you didn't receive this email.
+      update_needs_confirmation: You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address. Please check your spam folder if you didn't receive this email.
+      updated: Your account has been updated successfully.
     sessions:
-      already_signed_out: Başarılı bir şekilde oturum kapatıldı.
-      signed_in: Başarılı bir şekilde oturum açıldı.
-      signed_out: Başarılı bir şekilde oturum kapatıldı.
+      already_signed_out: Signed out successfully.
+      signed_in: Signed in successfully.
+      signed_out: Signed out successfully.
     unlocks:
-      send_instructions: Hesabınızı birkaç dakika içinde nasıl açacağınıza ilişkin talimatları içeren bir e-posta alacaksınız. Bu e-postayı almadıysanız, lütfen spam klasörünüzü kontrol edin.
-      send_paranoid_instructions: Hesabınız varsa, birkaç dakika içinde nasıl kilidini açacağınıza ilişkin talimatları içeren bir e-posta alacaksınız. Bu e-postayı almadıysanız, lütfen spam klasörünüzü kontrol edin.
-      unlocked: Hesabınızın kilidi başarıyla açıldı. Devam etmek için lütfen oturum açın.
+      send_instructions: You will receive an email with instructions for how to unlock your account in a few minutes. Please check your spam folder if you didn't receive this email.
+      send_paranoid_instructions: If your account exists, you will receive an email with instructions for how to unlock it in a few minutes. Please check your spam folder if you didn't receive this email.
+      unlocked: Your account has been unlocked successfully. Please login to continue.
   errors:
     messages:
-      already_confirmed: zaten onaylanmış, lütfen tekrar oturum açmayı deneyin
-      confirmation_period_expired: "%{period} içinde onaylanması gerekli, lütfen yeni bir tane talep edin"
-      expired: süresi geçti, lütfen yeni bir tane talep edin
-      not_found: bulunamadı
-      not_locked: kilitlenmemiş
+      already_confirmed: was already confirmed, please try signing in
+      confirmation_period_expired: needs to be confirmed within %{period}, please request a new one
+      expired: has expired, please request a new one
+      not_found: not found
+      not_locked: was not locked
       not_saved:
-        one: '1 hata bu %{resource} kaydedilmesini önledi:'
-        other: "%{count} hata bu %{resource} kaydedilmesini önledi:"
+        one: '1 error prohibited this %{resource} from being saved:'
+        other: "%{count} errors prohibited this %{resource} from being saved:"
